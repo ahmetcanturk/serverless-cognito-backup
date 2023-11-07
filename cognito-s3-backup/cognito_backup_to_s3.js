@@ -79,9 +79,3 @@ module.exports = async (callback) => new Promise(async (resolve, reject) => {
     }
 
 });
-
-/** 
- ** -NPM PACKAGES- **
- * sudo npm i dotenv
- * sudo npm i aws-sdk
- * */
