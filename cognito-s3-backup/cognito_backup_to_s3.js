@@ -82,8 +82,6 @@ module.exports = async (callback) => new Promise(async (resolve, reject) => {
 
 /** 
  ** -NPM PACKAGES- **
- * sudo npm i cognito-backup-restore
  * sudo npm i dotenv
  * sudo npm i aws-sdk
- * sudo npm i cron
  * */
