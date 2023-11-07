@@ -22,8 +22,6 @@ export const lambdaHandler = async (event, context) => {
         await new Promise(async (resolve, rej) => {
             await backup(resolve);
         }).then((res) => {
-            console.log('\n-BACKUP RESULT:', res);
-
             response = {
                 'statusCode': 200,
                 'body': JSON.stringify({
