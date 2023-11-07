@@ -1,22 +1,25 @@
-# -v1
+# AWS Cognito User Pool Auto Backup With Lambda Function
 
 This project allows you to take daily cognito user pool backups (without passwords) with a simple lambda function.
 
 First build the project on your local computer and then deploy the lambda.
-Note: Don't forgot to edit environment variables in Lambda.
+Note: Don't forgot to edit .env file.
 
 [AWS Lambda Tutorial Video](https://www.youtube.com/watch?v=mhdX4znMd2Q&ab_channel=JonathanDavies).
 
-[EventBridge (CloudWatch Events) Tutorial Video]([https://www.youtube.com/watch?v=mhdX4znMd2Q&ab_channel=JonathanDavies](https://www.youtube.com/watch?v=aDqxCYRDQNI&ab_channel=BeABetterDev)).
+[EventBridge (CloudWatch Events) Tutorial Video](https://www.youtube.com/watch?v=aDqxCYRDQNI&ab_channel=BeABetterDev).
 
 To build and deploy your application for the first time, run the following in your shell:
 
 ```bash
+npm install
 sam build
 sam deploy --guided
 ```
 
-
+## NPM PACKAGES
+ * [dotenv](https://www.npmjs.com/package/dotenv).
+ * [aws-sdk](https://www.npmjs.com/package/aws-sdk).
 
 [SAM CLI Documentation](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-logging.html).
 
