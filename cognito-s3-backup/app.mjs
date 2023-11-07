@@ -29,9 +29,7 @@ export const lambdaHandler = async (event, context) => {
                     backup: res,
                 })
             };
-
         })
-
     } catch (err) {
         console.error(err);
         response.body = err.message;
